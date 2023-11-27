@@ -26,6 +26,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Create Domain Controller and Client within a VNET
+- Set a static IP for the DC
+- Set DNS on Client VM
 - Install Active Directory
 - Create Users
 - Perform Simulated Scenarios
