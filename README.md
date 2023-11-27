@@ -100,34 +100,46 @@ When you go to log back in, you'll need to make sure you use the domain name you
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/v27QxrX.png" height="80%" width="80%"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+For this example lab, we'll create two organizational units: _EMPLOYEES, and _ADMINS <br>
+Once those organizational units are created, create a new user in the _ADMINS folder
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/kRmwwkD.png" height="80%" width="80%"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Be sure to give that user admin access
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/FIzlVcf.png" height="80%" width="80%"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Log out of the DC and log back into the DC as the newly created admin user
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/nmT95PU.png" height="80%" width="80%"/>
+</p>
+<p>
+Set the DC aside for now. We're going to configure the Client's DNS settings in Azure to the DC's static IP.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/kU1JfnP.png" height="80%" width="80%"/>
+</p>
+<p>
+Log into the Client VM. We're going to add it to the network. System>Rename this PC (advanced)>Change>Select Domain and input the domain name you created for your organization. <br>
+After accepting and applying the changes, you'll be asked to log in with admin credntials to confirm the change. You can use the admin you created in the previous steps. Accept and confirm the changes and restart the Client machine.<br>
+Congrats, you've now joined the Client machine to the domain. So, any user within the domain will now be able to log into the Client machine - assuming you've given them permissions to do so. <br>
+Next, we'll create many "dummy" user accounts that will be able to access the Client machine.
 </p>
 <br />
 
