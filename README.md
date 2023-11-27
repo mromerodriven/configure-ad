@@ -38,7 +38,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/SwZBdko.png" height="80%" width="80%"/>
 </p>
 <p>
-Create the domain controller VM
+Create the Domain Controller (DC) VM
 </p>
 <br />
 
@@ -46,7 +46,7 @@ Create the domain controller VM
 <img src="https://i.imgur.com/T0wWexA.png" height="80%" width="80%"/>
 </p>
 <p>
-Create the client VM
+Create the Client VM
 </p>
 <br />
 
@@ -62,7 +62,7 @@ Set the DC to a Static IP
 <img src="https://i.imgur.com/uAHZrg1.png" height="80%" width="80%"/>
 </p>
 <p>
-Confirm that the client and dc are both in the same VNET 
+Confirm that the Client and DC are both in the same VNET 
 </p>
 <br />
 
@@ -71,23 +71,23 @@ Confirm that the client and dc are both in the same VNET
 </p>
 <p>
 Open Windows Defender Firewall>Click on Inbound Rules>Sort by Protocol>Enable the two rules shown.<br>
-This will insure that that the client and communicate with the dc
+This will insure that that the Client and communicate with the DC
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/6DWUEkJ.png" height="80%" width="80%"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Install Active Directory on the DC
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img src="https://i.imgur.com/ZknKnK0.png" height="80%" width="80%"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Finish installing Active Directory Domain Services. After the installation is complete, your machine will reboot. Log back in to proceed.
 </p>
 <br />
 
